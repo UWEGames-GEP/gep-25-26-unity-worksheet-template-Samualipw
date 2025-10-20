@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System.Xml;
 
 public class MB_Inventory : MonoBehaviour
 {
@@ -33,10 +34,6 @@ public class MB_Inventory : MonoBehaviour
 
         }
     }
-
-
-
-
     public void AddItemToInventory(string item) 
     {
         if (gameManager.state == GameState.GAMEPLAY) 
@@ -52,6 +49,19 @@ public class MB_Inventory : MonoBehaviour
             items.Remove(item);
         }
     }
+
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        MB_Items collisionItem = hit.gameObject.GetComponent<MB_Items>();
+
+        if (collisionItem != null) 
+        { 
+            AddItemToInventory(collisionItem.name);
+            Destroy(collisionItem.gameObject);
+        }
+    }
+    
+
 
 
 
