@@ -1223,7 +1223,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8f5dfb296fbb8c46a7ce65e18c11067, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Test
+  Name: Cube
+  Description: A generic cube, not worth much
+  Rarity: 0
 --- !u!65 &1475026912
 BoxCollider:
   m_ObjectHideFlags: 0

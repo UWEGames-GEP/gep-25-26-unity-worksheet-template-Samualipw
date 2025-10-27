@@ -8,6 +8,11 @@ public class MB_Items : MonoBehaviour
 
 
     public string Name;
+    public string Description;
+    public int Rarity; // Higher = More rare
+    public float Value;
+
+
     /*
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
