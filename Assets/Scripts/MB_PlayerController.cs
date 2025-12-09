@@ -11,7 +11,7 @@ public class MB_PlayerController : ThirdPersonController
     {
         if (value.isPressed) 
         {
-            Debug.Log("pause game");
+            gameManager.TogglePause();
         }
     }
 

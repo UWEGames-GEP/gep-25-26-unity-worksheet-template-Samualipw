@@ -303,7 +303,7 @@ MonoBehaviour:
   BottomClamp: -30
   CameraAngleOverride: 0
   LockCameraPosition: 0
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 1470139853}
 --- !u!4 &414485093 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8345070699079395522, guid: 09aade0ecefd01e4b8f7661acf64f5c2, type: 3}

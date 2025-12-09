@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Xml;
+using UnityEngine.InputSystem;
 
 public class MB_Inventory : MonoBehaviour
 {
@@ -50,6 +51,11 @@ public class MB_Inventory : MonoBehaviour
         }
     }
 
+
+
+
+
+
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
         MB_Items collisionItem = hit.gameObject.GetComponent<MB_Items>();
@@ -61,6 +67,14 @@ public class MB_Inventory : MonoBehaviour
         }
     }
     
+    private void OnRemoveItem(InputValue value) 
+    { 
+    
+    
+    
+    
+    
+    }
 
 
 
