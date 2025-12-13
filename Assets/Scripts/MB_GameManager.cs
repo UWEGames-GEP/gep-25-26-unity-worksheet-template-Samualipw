@@ -19,6 +19,14 @@ public class MB_GameManager : MonoBehaviour
     public GameState state = GameState.GAMEPLAY;
 
     bool hasChangedState = false;
+
+    public GameObject inventory;
+
+    
+    
+    
+    
+    
     
  
 
@@ -44,13 +52,20 @@ public class MB_GameManager : MonoBehaviour
             {
                 case GameState.GAMEPLAY:
                     Time.timeScale = 1.0f;
+                    inventory.gameObject.SetActive(false);
+                    Cursor.lockState = CursorLockMode.Locked;
                     break;
                 
                 case GameState.PAUSE:
                     Time.timeScale = 0.0f;
+                    inventory.gameObject.SetActive(true);
+                    Debug.Log("Test");
+                    Cursor.lockState = CursorLockMode.None;
                     break;
             }
         }
+
+
     }
 
     public void TogglePause() 

@@ -51,7 +51,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "DropItem",
+                    "name": "RemoveItem",
                     "type": "Button",
                     "id": "423d66d1-9d59-4e21-a7fb-974f767c50d7",
                     "expectedControlType": "",
@@ -251,11 +251,11 @@
                 {
                     "name": "",
                     "id": "bdd630f0-a2cd-46d2-a55d-3f443f2076f5",
-                    "path": "q",
+                    "path": "<Keyboard>/#(Q)",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
-                    "action": "DropItem",
+                    "groups": ";KeyboardMouse",
+                    "action": "RemoveItem",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

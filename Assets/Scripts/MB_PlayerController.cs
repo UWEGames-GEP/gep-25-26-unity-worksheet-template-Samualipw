@@ -15,7 +15,21 @@ public class MB_PlayerController : ThirdPersonController
         }
     }
 
+    private void OnRemoveItem(InputValue value)
+    {
+
+        if (value.isPressed)
+        {
+            Debug.Log("Removed Item");
+            GetComponent<MB_Inventory>().RemoveItemFromInventory();
 
 
-    
+        }
+
+
+
+    }
+
+
+
 }
